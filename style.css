@@ -1,0 +1,21 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
+* {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {}
+
+/* Medium devices */
+@media only screen and (max-width: 992px) and (min-width: 600px) {}
+
+/* Extra large devices */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {}
