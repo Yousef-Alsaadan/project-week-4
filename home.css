@@ -1,3 +1,145 @@
+/*navbar sttyle*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #C17250;
+    padding: 1rem 5rem;
+    border-end-end-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+nav img {
+    height: 60;
+    width: 80;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav_link {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_link a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.nav_link a:hover {
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+}
+
+.btn_sign {
+    background: white;
+    border: none;
+    font-size: large;
+    padding: .5rem .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: block;
+}
+
+.btn_sign:hover {
+    box-shadow: 4px 4px 20px;
+    transition: transform 0.3s ease;
+}
+
+.btn_out {
+    background: white;
+    border: none;
+    font-size: large;
+    padding: .5rem .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: none;
+}
+
+.btn_out:hover {
+    box-shadow: 4px 4px 20px;
+    transition: transform 0.3s ease;
+}
+
+/*map style*/
+.map-container {
+    position: relative;
+    height: 85vh;
+    background-image: url("ksa-map.png");
+    background-size: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.city {
+    position: absolute;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.city:hover {
+    transform: scale(1.2);
+    z-index: 999;
+}
+
+.city img {
+    position: absolute;
+    float: left;
+    filter: grayscale(100%);
+}
+
+.city img:hover {
+    filter: grayscale(0);
+    transition: transform 0.3s ease;
+}
+
+#central {
+    top: 153px;
+    left: 582px;
+}
+
+#western {
+    top: 223px;
+    left: 458px;
+}
+
+#eastern {
+    top: 135px;
+    left: 854px;
+}
+
+#northern {
+    top: 22px;
+    left: 488px;
+}
+
+#southern {
+    top: 460px;
+    left: 728px;
+}
+
+
+/*hero_text*/
+.hero_text {
+    float: right;
+    top: 0;
+    font-size: 4em;
+    color: #C17250;
+    translate: -25% 20%;
+}
+
+.h_text2 {
+    translate: -40% -30%;
+}
+
 /* Extra small devices */
 @media only screen and (max-width: 600px) {}
 

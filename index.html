@@ -12,11 +12,55 @@
     <title>ذاكرة الوطن</title>
 
     <!--stylesheet-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <h1>hi</h1>
+    <!--navbar-->
+    <nav>
+      <div class="nav_links">
+        <a href="index.html"><img src="logo.png" alt="" /></a>
+        <div class="nav_link">
+          <a href="index.html">الرئيسية</a>
+          <a href="questions.html">اختبر وطنيتك</a>
+          <a href="info.html">معلومات عامة</a>
+        </div>
+      </div>
+
+      <div class="nav_btn">
+        <button class="btn_sign">تسجيل الدخول</button>
+        <button class="btn_out">خروج</button>
+      </div>
+    </nav>
+
+    <!--main map-->
+    <div class="map-container">
+      <div class="city" id="western">
+        <img src="western-map.png" style="height: 358px" />
+      </div>
+
+      <div class="city" id="eastern">
+        <img src="eastern-map.png" style="height: 444px" />
+      </div>
+
+      <div class="city" id="northern">
+        <img src="northern-map.png" style="height: 346px" />
+      </div>
+
+      <div class="city" id="southern">
+        <img src="southern-map.png" style="height: 200px" />
+      </div>
+
+      <div class="city" id="central">
+        <img src="central-map.png" style="height: 400px" />
+      </div>
+
+      <!--hero text-->
+      <div class="hero_text">
+        <h1 class="h_text1">ذاكـرة</h1>
+        <h1 class="h_text2">الوطـن</h1>
+      </div>
+    </div>
     <!--javascript-->
     <script src="main.js"></script>
   </body>

@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    width: 1440px;
+    margin: 0 auto;
+}
 
 
 /* Extra small devices */
