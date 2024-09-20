@@ -2,7 +2,7 @@
 @media only screen and (max-width: 600px) {}
 
 /* Medium devices */
-@media only screen and (max-width: 992px) and (min-width: 600px) {}
+@media only screen and (max-width: 992px) and (min-width: 601px) {}
 
 /* Extra large devices */
-@media only screen and (max-width: 1200px) and (min-width: 992px) {}
+@media only screen and (max-width: 1200px) and (min-width: 993px) {}

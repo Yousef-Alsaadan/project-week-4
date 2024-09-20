@@ -5,21 +5,114 @@
     font-family: "Baloo Bhaijaan 2", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-  
+
     margin: 0;
     padding: 0;
 }
-body{
+
+.conten {
     width: 1440px;
     margin: 0 auto;
 }
 
+/*navbar sttyle*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #C17250;
+    padding: 1rem 5rem;
+    border-end-end-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+nav img {
+    height: 60;
+    width: 80;
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav_link {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_link a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.nav_link a:hover {
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+}
+
+.btn_sign {
+    background: white;
+    border: none;
+    font-size: large;
+    padding: .5rem .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: block;
+}
+
+.btn_sign:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: transform 0.3s ease;
+}
+
+.btn_out {
+    background: white;
+    border: none;
+    font-size: large;
+    padding: .5rem .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    display: none;
+}
+
+.btn_out:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: transform 0.3s ease;
+}
+
 
 /* Extra small devices */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .conten {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .nav_link,
+    .nav_btn {
+        display: none;
+    }
+}
 
 /* Medium devices */
-@media only screen and (max-width: 992px) and (min-width: 600px) {}
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+    .conten {
+        width: 720px;
+        margin: 0 auto;
+    }
+}
 
 /* Extra large devices */
-@media only screen and (max-width: 1200px) and (min-width: 992px) {}
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
+    .conten {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
