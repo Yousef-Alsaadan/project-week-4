@@ -1,8 +1,216 @@
+<<<<<<< Updated upstream
 /* Extra small devices */
 @media only screen and (max-width: 600px) {}
+=======
+/*navbar style*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c17250;
+    padding: 1rem 5rem;
+    border-end-end-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+  nav img {
+    height: 60px;
+    width: 80px;
+  }
+  
+  .nav_links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav_link {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav_link a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  }
+  
+  .nav_link a:hover {
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn_sign {
+    background: white;
+    border: none;
+    font-size: large;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .btn_sign:hover {
+    box-shadow: 4px 4px 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .btn_out {
+    background: white;
+    border: none;
+    font-size: large;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .btn_out:hover {
+    box-shadow: 4px 4px 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  /*map style*/
+  .map-container {
+    position: relative;
+    height: 85vh;
+    background-image: url("ksa-map.png");
+    background-size: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .city {
+    position: absolute;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .city:hover {
+    transform: scale(1.2);
+    z-index: 999;
+  }
+  
+  .city img {
+    position: absolute;
+    float: left;
+    filter: grayscale(100%);
+  }
+  
+  .city:hover img {
+    filter: grayscale(0);
+    transition: transform 0.3s ease;
+  }
+  
+  /* النص داخل المناطق */
+  .city_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    display: none; /* سيتم إظهاره عند التفاعل */
+  }
+  
+  .city:hover .city_text {
+    display: block;
+    
+  }
+  
+  /* مواقع المدن */
+  #central {
+    top: 153px;
+    left: 582px;
+    
+  }
+  
+  #western {
+    top: 223px;
+    left: 458px;
+  }
+  
+  #eastern {
+    top: 135px;
+    left: 854px;
+  }
+  
+  #northern {
+    top: 22px;
+    left: 488px;
+   ;
+  }
+  
+  #southern {
+    top: 460px;
+    left: 728px;
+  }
+  
+  /*hero_text*/
+  .hero_text {
+    float: right;
+    top: 0;
+    font-size: 4em;
+    color: #c17250;
+    translate: -25% 20%;
+  }
+  
+  .h_text2 {
+    translate: -40% -30%;
+  }
+  .button-city{
+    display: flex;
+    justify-content: space-around;
+    width: 12vw;
 
-/* Medium devices */
-@media only screen and (max-width: 992px) and (min-width: 600px) {}
+  }
+  #character {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    animation: walk 4s linear infinite;
+    mix-blend-mode: multiply;
+}
+>>>>>>> Stashed changes
 
-/* Extra large devices */
-@media only screen and (max-width: 1200px) and (min-width: 992px) {}
+@keyframes walk {
+    0% { left: 0; }
+    100% { left: 100%; }
+}
+
+#chatbox {
+    display: none;
+    position: fixed;
+    bottom: 25%;
+    right: 40%;
+    width: 52%;
+    height: 20%;
+    z-index: 9999;
+    font-size: 3rem;
+    background-color: rgb(255, 255, 255,0.5);
+}
+
+#chatbox input{
+    font-size: 2rem;
+
+} 
+#chatbox button{
+    font-size: 2rem;
+
+} 
+
+
+  /* Extra small devices */
+  @media only screen and (max-width: 600px) {}
+  
+  /* Medium devices */
+  @media only screen and (max-width: 992px) and (min-width: 600px) {}
+  
+  /* Extra large devices */
+  @media only screen and (max-width: 1200px) and (min-width: 992px) {}
+  
