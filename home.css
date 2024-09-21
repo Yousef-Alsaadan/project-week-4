@@ -400,7 +400,8 @@
     flex-direction: column;
   }
 
-  .city_clicked_text {
+  .city_clicked_text,
+  .city_text {
     font-size: 1em;
     width: 50vw;
   }
@@ -417,7 +418,10 @@
     transform: translate(-95%, 50%);
   }
 
-  .northern_text,
+  .northern_text {
+    transform: translate(-55%, 115%);
+  }
+
   .eastern_text {
     transform: translate(-115%, 95%);
   }
@@ -485,6 +489,27 @@
   #character {
     animation: walk 2s linear infinite;
   }
+
+
+  .western_text {
+    transform: translate(-30%, 150%);
+  }
+
+  .central_text {
+    transform: translate(-50%, 175%);
+  }
+
+  .southern_text {
+    transform: translate(-80%, 80%);
+  }
+
+  .northern_text {
+    transform: translate(-40%, 200%);
+  }
+
+  .eastern_text {
+    transform: translate(-105%, 175%);
+  }
 }
 
 /* Extra large devices */
@@ -521,5 +546,25 @@
   #southern {
     top: 472px;
     left: 604px;
+  }
+
+  .western_text {
+    transform: translate(-10%, 240%);
+  }
+
+  .central_text {
+    transform: translate(-50%, 280%);
+  }
+
+  .southern_text {
+    transform: translate(-75%, 140%);
+  }
+
+  .northern_text {
+    transform: translate(-30%, 345%);
+  }
+
+  .eastern_text {
+    transform: translate(-110%, 290%);
   }
 }
