@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
@@ -38,7 +39,7 @@
           <button class="btn_sign">تسجيل الدخول</button>
           <button class="btn_out">خروج</button>
         </div>
-        
+
         <!--mobile navbar-->
         <div class="nav_mobile">
           <div class="nav_mobile_main">
@@ -81,22 +82,78 @@
       <div class="map-container">
         <div class="city" id="western">
           <img src="western-map.png" />
+
+          <div class="city_text">
+            المنطقة الغربية: جدة ومكة
+            <p>
+              مهد الرسالة ومصدر الإلهام، تحتفي بروحانية تجمع بين الحضارة
+              والتراث.
+            </p>
+            <div class="button-city">
+              <button>الفعاليات الوطنيه</button>
+              <button>الذاكره الوطنيه</button>
+            </div>
+          </div>
         </div>
 
         <div class="city" id="eastern">
           <img src="eastern-map.png" />
+          <div class="city_text">
+            المنطقة الشرقية: الدمام والخبر
+            <p>
+              أرض الاقتصاد والطاقة، تضيف إلى مسيرة الوطن قوة وعزيمة نحو مستقبل
+              مشرق.
+            </p>
+            <div class="button-city">
+              <button>الفعاليات الوطنيه</button>
+              <button>الذاكره الوطنيه</button>
+            </div>
+          </div>
         </div>
 
         <div class="city" id="northern">
           <img src="northern-map.png" />
+          <div class="city_text">
+            المنطقة الشمالية: تبوك والجوف
+            <p>
+              حامية الحدود وموطن القوة، ترفع راية الوحدة والفخر في يوم الوطن
+              العظيم.
+            </p>
+            <div class="button-city">
+              <button>الفعاليات الوطنيه</button>
+              <button>الذاكره الوطنيه</button>
+            </div>
+          </div>
         </div>
 
         <div class="city" id="southern">
           <img src="southern-map.png" />
+          <div class="city_text">
+            المنطقة الجنوبية: عسير وجازان
+            <p>
+              طبيعة ساحرة وتاريخ عريق، تعزز معاني الولاء والاعتزاز في اليوم
+              الوطني.
+            </p>
+            <div class="button-city">
+              <button>الفعاليات الوطنيه</button>
+              <button>الذاكره الوطنيه</button>
+            </div>
+          </div>
         </div>
 
         <div class="city" id="central">
           <img src="central-map.png" />
+          <div class="city_text">
+            المنطقة الوسطى: العاصمة الرياض
+            <p>
+              قلب المملكة النابض بالعطاء والنهضة، حيث يتجلى الفخر بالهوية والوطن
+              في كل زاوية
+            </p>
+            <div class="button-city">
+              <button>الفعاليات الوطنيه</button>
+              <button>الذاكره الوطنيه</button>
+            </div>
+          </div>
         </div>
 
         <!--hero text-->
@@ -106,6 +163,18 @@
         </div>
       </div>
     </div>
+
+      <!--الخيل -->
+
+      <img id="character" src="horse-running.jpg" alt="شخصية" />
+
+      <div id="chatbox">
+        <p id="questionDisplay">مرحبًا!</p>
+        <input type="text" id="answerInput" placeholder="اكتب إجابتك هنا" />
+        <button onclick="checkAnswer()">إرسال</button>
+        <div id="result"></div>
+      </div>
+
     <!--javascript-->
     <script src="main.js"></script>
     <script src="style.js"></script>

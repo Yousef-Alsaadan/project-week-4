@@ -1,0 +1,107 @@
+/* الفيديو كخلفية للشاشة */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* جعل الفيديو في الخلف */
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تغطية الشاشة بالكامل */
+    z-index: -1;
+  }
+  
+  /* تنسيق العنوان */
+  .header {
+    background-color: rgba(193, 114, 80, 0.8); /* خلفية شفافة فوق الفيديو */
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  /* القسم الرئيسي */
+  .memory-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(247, 247, 247, 0.9); /* خلفية شفافة فوق الفيديو */
+    position: relative;
+  }
+  
+  .memory-content {
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+  
+  .memory-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .memory-content p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* قسم الفعاليات */
+  .events-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(236, 236, 236, 0.9); /* خلفية شفافة فوق الفيديو */
+    position: relative;
+  }
+  
+  .events-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .events-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .events-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .events-section ul li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* زر العودة */
+  .back-button {
+    display: inline-block;
+    margin: 2rem 0;
+    padding: 0.5rem 2rem;
+    background-color: #c17250;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #a55b3b;
+  }
+  

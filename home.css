@@ -1,246 +1,315 @@
 /*map style*/
 .map-container {
-    position: relative;
-    height: 85vh;
-    /* background-image: url("ksa-map.png"); */
-    background-size: 95%;
-    background-position: center;
-    background-repeat: no-repeat;
+  position: relative;
+  height: 85vh;
+  /* background-image: url("ksa-map.png"); */
+  background-size: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .city {
-    position: absolute;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+  position: absolute;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .city:hover {
-    transform: scale(1.2);
-    z-index: 999;
+  transform: scale(1.2);
+  z-index: 999;
 }
 
 .city img {
-    position: absolute;
-    float: left;
-    filter: grayscale(100%);
+  position: absolute;
+  float: left;
+  filter: grayscale(100%);
 }
 
 .city img:hover {
-    filter: grayscale(0);
-    transition: transform 0.3s ease;
+  filter: grayscale(0);
+  transition: transform 0.3s ease;
 }
 
 #central {
-    top: 153px;
-    left: 582px;
+  top: 153px;
+  left: 582px;
 }
 
 #central img {
-    height: 400px
+  height: 400px
 }
 
 #western {
-    top: 223px;
-    left: 458px;
+  top: 223px;
+  left: 458px;
 }
 
 #western img {
-    height: 358px
+  height: 358px
 }
 
 #eastern {
-    top: 135px;
-    left: 854px;
+  top: 135px;
+  left: 854px;
 }
 
 #eastern img {
-    height: 444px
+  height: 444px
 }
 
 #northern {
-    top: 22px;
-    left: 488px;
+  top: 22px;
+  left: 488px;
 }
 
 #northern img {
-    height: 346px
+  height: 346px
 }
 
 #southern {
-    top: 460px;
-    left: 728px;
+  top: 460px;
+  left: 728px;
 }
 
 #southern img {
-    height: 200px
+  height: 200px
 }
 
 
 /*hero_text*/
 .hero_text {
-    float: right;
-    top: 0;
-    font-size: 4em;
-    color: #C17250;
-    translate: -25% 20%;
+  float: right;
+  top: 0;
+  font-size: 4em;
+  color: #C17250;
+  translate: -25% 20%;
 }
 
 .h_text2 {
-    translate: -40% -30%;
+  translate: -40% -30%;
 }
 
 
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
-    .hero_text {
-        font-size: 2em;
-        translate: 0;
-        text-align: center;
-        float: none;
-        margin-top: 4rem;
-    }
+  .hero_text {
+    font-size: 2em;
+    translate: 0;
+    text-align: center;
+    float: none;
+    margin-top: 4rem;
+  }
 
-    .h_text2 {
-        translate: 0 -30%;
-    }
+  .h_text2 {
+    translate: 0 -30%;
+  }
 
-    #central img {
-        height: 185px
-    }
+  #central img {
+    height: 185px
+  }
 
-    #western img {
-        height: 163px
-    }
+  #western img {
+    height: 163px
+  }
 
-    #eastern img {
-        height: 200px
-    }
+  #eastern img {
+    height: 200px
+  }
 
-    #northern img {
-        height: 160px
-    }
+  #northern img {
+    height: 160px
+  }
 
-    #southern img {
-        height: 88px
-    }
+  #southern img {
+    height: 88px
+  }
 
-    #central {
-        top: 261px;
-        left: 205px;
-    }
+  #central {
+    top: 261px;
+    left: 205px;
+  }
 
-    #western {
-        top: 292px;
-        left: 146px;
-    }
+  #western {
+    top: 292px;
+    left: 146px;
+  }
 
-    #eastern {
-        top: 257px;
-        left: 327px;
-    }
+  #eastern {
+    top: 257px;
+    left: 327px;
+  }
 
-    #northern {
-        top: 200px;
-        left: 162px;
-    }
+  #northern {
+    top: 200px;
+    left: 162px;
+  }
 
-    #southern {
-        top: 401px;
-        left: 264px;
-    }
+  #southern {
+    top: 401px;
+    left: 264px;
+  }
 
 }
 
 /* Medium devices */
 @media only screen and (max-width: 992px) and (min-width: 601px) {
-    .hero_text {
-        font-size: 2em;
-        translate: -30% 20%;
-    }
+  .hero_text {
+    font-size: 2em;
+    translate: -30% 20%;
+  }
 
-    .h_text2 {
-        translate: -20% -30%;
-    }
+  .h_text2 {
+    translate: -20% -30%;
+  }
 
-    #central img {
-        height: 280px
-    }
+  #central img {
+    height: 280px
+  }
 
-    #western img {
-        height: 251px
-    }
+  #western img {
+    height: 251px
+  }
 
-    #eastern img {
-        height: 307px
-    }
+  #eastern img {
+    height: 307px
+  }
 
-    #northern img {
-        height: 239px
-    }
+  #northern img {
+    height: 239px
+  }
 
-    #southern img {
-        height: 135px
-    }
+  #southern img {
+    height: 135px
+  }
 
-    #central {
-        top: 178px;
-        left: 363px;
-    }
+  #central {
+    top: 178px;
+    left: 363px;
+  }
 
-    #western {
-        top: 226px;
-        left: 279px;
-    }
+  #western {
+    top: 226px;
+    left: 279px;
+  }
 
-    #eastern {
-        top: 168px;
-        left: 551px;
-    }
+  #eastern {
+    top: 168px;
+    left: 551px;
+  }
 
-    #northern {
-        top: 89px;
-        left: 298px;
-    }
+  #northern {
+    top: 89px;
+    left: 298px;
+  }
 
-    #southern {
-        top: 396px;
-        left: 459px;
-    }
+  #southern {
+    top: 396px;
+    left: 459px;
+  }
 }
 
 /* Extra large devices */
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
-    .hero_text {
-        font-size: 2.5em;
-        translate: -30% 20%;
-    }
+  .hero_text {
+    font-size: 2.5em;
+    translate: -30% 20%;
+  }
 
-    .h_text2 {
-        translate: -20% -30%;
-    }
+  .h_text2 {
+    translate: -20% -30%;
+  }
 
-    #central {
-        top: 165px;
-        left: 458px;
-    }
+  #central {
+    top: 165px;
+    left: 458px;
+  }
 
-    #western {
-        top: 233px;
-        left: 334px;
-    }
+  #western {
+    top: 233px;
+    left: 334px;
+  }
 
-    #eastern {
-        top: 153px;
-        left: 732px;
-    }
+  #eastern {
+    top: 153px;
+    left: 732px;
+  }
 
-    #northern {
-        top: 35px;
-        left: 365px;
-    }
+  #northern {
+    top: 35px;
+    left: 365px;
+  }
 
-    #southern {
-        top: 472px;
-        left: 604px;
-    }
+  #southern {
+    top: 472px;
+    left: 604px;
+  }
+}
+
+/* النص داخل المناطق */
+.city_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  display: none;
+  /* سيتم إظهاره عند التفاعل */
+}
+
+.city:hover .city_text {
+  display: block;
+
+}
+
+.button-city {
+  display: flex;
+  justify-content: space-around;
+  width: 12vw;
+
+}
+
+#character {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  animation: walk 4s linear infinite;
+  mix-blend-mode: multiply;
+}
+
+@keyframes walk {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+#chatbox {
+  display: none;
+  position: fixed;
+  bottom: 25%;
+  right: 40%;
+  width: 52%;
+  height: 20%;
+  z-index: 9999;
+  font-size: 3rem;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+#chatbox input {
+  font-size: 2rem;
+
+}
+
+#chatbox button {
+  font-size: 2rem;
+
 }
