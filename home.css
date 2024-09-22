@@ -594,6 +594,14 @@
     width: 100%;
 
   }
+  #character {
+    position: absolute;
+    bottom: 5vh;
+    /* left: 0; */
+    /* width: 15%; */
+    animation: walk 4s linear infinite;
+    z-index: 999;
+  }
 }
 
 
@@ -723,6 +731,14 @@
     width: 105%;
 
   }
+  #character {
+    position: absolute;
+    bottom: 30vh;
+    /* left: 0; */
+    /* width: 15%; */
+    animation: walk 4s linear infinite;
+    z-index: 999;
+  }
 
 }
 
@@ -826,7 +842,14 @@
 
   }
 
-
+  #character {
+    position: absolute;
+    bottom: 33vh;
+    /* left: 0; */
+    /* width: 15%; */
+    animation: walk 4s linear infinite;
+    z-index: 999;
+  }
 
 
 }
