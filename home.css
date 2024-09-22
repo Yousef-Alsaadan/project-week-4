@@ -105,11 +105,11 @@
   cursor: auto;
   /* سيتم إظهاره عند التفاعل */
 
-  background: rgba(255, 255, 255, 0.09);
+  background: white;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
+  /* -webkit-backdrop-filter: blur(5px); */
   border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -185,11 +185,12 @@
   cursor: auto;
   /* سيتم إظهاره عند التفاعل */
 
-  background: rgba(255, 255, 255, 0.09);
+  /* background: rgba(255, 255, 255, 0.09); */
+  background: white;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
+  /* -webkit-backdrop-filter: blur(5px); */
   border: 1px solid rgba(255, 255, 255, 1);
 
 
@@ -321,6 +322,31 @@
   cursor: pointer;
   border-radius: 10px;
   padding: .5rem 1rem;
+}
+
+
+/*weather*/
+.map_box_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: bold;
+}
+.map_box_title p{
+  font-weight: 400;
+}
+
+.weater_content {
+  display: flex;
+  align-items: center;
+  /* gap: .5rem; */
+}
+
+.weater_img img {
+  filter: grayscale(0);
+
+  position: relative;
 }
 
 

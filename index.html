@@ -80,26 +80,56 @@
     <!--main map-->
     <div class="conten">
       <div class="map-container">
-        <div class="city" id="western">
+        <div class="city" id="western" onmouseover="checkWeather('Jeddah', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
           <img src="western-map.png" />
 
-          <div class="western_text city_text">
-            المنطقة الغربية: جدة ومكة
-            <p>
-              مهد الرسالة ومصدر الإلهام، تحتفي بروحانية تجمع بين الحضارة
-              والتراث.
-            </p>
-            <div class="button-city">
-              <button>الفعاليات الوطنيه</button>
-              <button>الذاكره الوطنيه</button>
+          <div class="map_box_continer">
+            <div class="western_text city_text">
+              <div class="map_box_title">
+                المنطقة الغربية: جدة ومكة
+
+                <div class="weater_content" dir="ltr">
+                  <div class="weater_img">
+                    <img
+                      src="snow.png"
+                      class="weather-icon"
+                      style="height: 38px"
+                    />
+                  </div>
+
+                  <p class="cityTemp">15°C</p>
+                </div>
+              </div>
+              <p>
+                مهد الرسالة ومصدر الإلهام، تحتفي بروحانية تجمع بين الحضارة
+                والتراث.
+              </p>
+              <div class="button-city">
+                <button>الفعاليات الوطنيه</button>
+                <button>الذاكره الوطنيه</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="city" id="eastern">
+        <div class="city" id="eastern" onmouseover="checkWeather('Dammam', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
           <img src="eastern-map.png" />
           <div class="eastern_text city_text">
-            المنطقة الشرقية: الدمام والخبر
+            <div class="map_box_title">
+              المنطقة الشرقية: الدمام والخبر
+
+              <div class="weater_content" dir="ltr">
+                <div class="weater_img">
+                  <img
+                    src="snow.png"
+                    class="weather-icon"
+                    style="height: 38px"
+                  />
+                </div>
+
+                <p class="cityTemp">15°C</p>
+              </div>
+            </div>
             <p>
               أرض الاقتصاد والطاقة، تضيف إلى مسيرة الوطن قوة وعزيمة نحو مستقبل
               مشرق.
@@ -111,10 +141,24 @@
           </div>
         </div>
 
-        <div class="city" id="northern">
+        <div class="city" id="northern" onmouseover="checkWeather('Tabuk', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
           <img src="northern-map.png" />
           <div class="northern_text city_text">
-            المنطقة الشمالية: تبوك والجوف
+            <div class="map_box_title">
+              المنطقة الشمالية: تبوك والجوف
+
+              <div class="weater_content" dir="ltr">
+                <div class="weater_img">
+                  <img
+                    src="snow.png"
+                    class="weather-icon"
+                    style="height: 38px"
+                  />
+                </div>
+
+                <p class="cityTemp">15°C</p>
+              </div>
+            </div>
             <p>
               حامية الحدود وموطن القوة، ترفع راية الوحدة والفخر في يوم الوطن
               العظيم.
@@ -126,10 +170,24 @@
           </div>
         </div>
 
-        <div class="city" id="southern">
+        <div class="city" id="southern" onmouseover="checkWeather('Jazan', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
           <img src="southern-map.png" />
           <div class="southern_text city_text">
-            المنطقة الجنوبية: عسير وجازان
+            <div class="map_box_title">
+              المنطقة الجنوبية: عسير وجازان
+
+              <div class="weater_content" dir="ltr">
+                <div class="weater_img">
+                  <img
+                    src="snow.png"
+                    class="weather-icon"
+                    style="height: 38px"
+                  />
+                </div>
+
+                <p class="cityTemp">15°C</p>
+              </div>
+            </div>
             <p>
               طبيعة ساحرة وتاريخ عريق، تعزز معاني الولاء والاعتزاز في اليوم
               الوطني.
@@ -141,10 +199,24 @@
           </div>
         </div>
 
-        <div class="city" id="central">
+        <div class="city" id="central" onmouseover="checkWeather('Riyadh', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
           <img src="central-map.png" />
           <div class="central_text city_text">
-            المنطقة الوسطى: العاصمة الرياض
+            <div class="map_box_title">
+              المنطقة الوسطى: العاصمة الرياض
+
+              <div class="weater_content" dir="ltr">
+                <div class="weater_img">
+                  <img
+                    src="snow.png"
+                    class="weather-icon"
+                    style="height: 38px"
+                  />
+                </div>
+
+                <p class="cityTemp">15°C</p>
+              </div>
+            </div>
             <p>
               قلب المملكة النابض بالعطاء والنهضة، حيث يتجلى الفخر بالهوية والوطن
               في كل زاوية

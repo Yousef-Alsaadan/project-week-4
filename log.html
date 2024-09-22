@@ -1,4 +1,4 @@
-<html lang="ar" dir="rtl">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,103 @@
     <link rel="stylesheet" href="log.css" />
   </head>
   <body>
+    <!--log form-->
+    <div class="continer_log">
+      <div class="caracter_wrapper">
+        <img src="welcome.png" id="change_caracter_log"/>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">مرحبا</div>
+        <div class="title signup">سجل معنا</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked="" />
+          <input type="radio" name="slide" id="signup" />
+          <label for="login" class="slide login">تسجيل دخول</label>
+          <label for="signup" class="slide signup">تسجيل</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="liveAlertPlaceholder"></div>
+
+            <div class="field">
+              <input
+                type="text"
+                placeholder="اسم المستخدم"
+                id="userValidate"
+                required
+                dir="rtl"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                placeholder="كلمة السر"
+                id="passValidate"
+                required
+                dir="rtl"
+              />
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input
+                type="submit"
+                value="دخول"
+                id="logInBtn"
+                class="liveAlertBtn"
+                onclick="logIn()"
+              />
+            </div>
+            <div class="signup-link">ليس لديك حساب؟ <a href="">تسجيل</a></div>
+          </form>
+          <form action="#" class="signup">
+            <div class="liveAlertPlaceholder"></div>
+
+            <div class="field">
+              <input
+                type="text"
+                placeholder="اسم المستخدم"
+                id="userName"
+                required
+                dir="rtl"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                placeholder="البريد الالكتروني"
+                id="emailAddress"
+                required
+                dir="rtl"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                placeholder="كلمة السر"
+                id="pass"
+                required
+                dir="rtl"
+              />
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input
+                type="submit"
+                value="تسجيل"
+                id="signUpBtn"
+                class="liveAlertBtn"
+                onclick="signUp()"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <!--javascript-->
     <script src="log.js"></script>
   </body>
