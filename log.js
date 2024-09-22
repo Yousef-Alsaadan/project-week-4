@@ -19,9 +19,6 @@ signupLink.onclick = () => {
   return false;
 };
 
-function change_caracter_wel() {}
-
-function change_caracter_teach() {}
 
 /*log validate*/
 let url = "https://66f02a49f2a8bce81be52e94.mockapi.io/users";
@@ -41,7 +38,7 @@ let mess = document.createElement("p");
 
 async function signUp() {
   event.preventDefault();
-  if (userName.value != "" && pass.value != "" && emailAddress.value != "") {
+  if (userName.value != "" || pass.value != "" || emailAddress.value != "") {
     if (userName.value.length >= 5) {
       if (pass.value.length >= 8) {
         let validateEmail = (emailAddress) => {
@@ -72,7 +69,7 @@ async function signUp() {
                     email: emailAddress.value,
                   })
                 );
-                window.location.href = "./home.html";
+                window.location.href = "./index.html";
               });
           } else {
             errorSign("الاسم او الايميل مأخوذ!!");
@@ -97,6 +94,11 @@ function logIn() {
     .then((response) => response.json())
     .then((json) => {
       let userFound = false;
+      if (userValidate.value === "" || passValidate.value === "") {
+        errorLog("الرجاء تعبأة الحقول!!");
+        return;
+      }
+
       json.map((data) => {
         if (userValidate.value === data.user) {
           if (passValidate.value === data.pass) {
@@ -104,15 +106,15 @@ function logIn() {
               "user",
               JSON.stringify({ user: data.user, email: data.email })
             );
-            window.location.href = "./home.html";
+            window.location.href = "./index.html";
             userFound = true;
           } else {
-            errorLog("Incorrect password!");
+            errorLog("الرمز خاطئ!");
           }
         }
       });
       if (!userFound) {
-        errorLog("User not found!");
+        errorLog("المستخدم خير متوفر!");
       }
     });
 }
@@ -126,6 +128,7 @@ function errorSign(message) {
     let appendAlert = (message) => {
       mess.textContent = message;
       mess.style.color = "red";
+      mess.setAttribute("dir", "rtl");
       wrapper.appendChild(mess);
 
       alertPlaceholder.append(wrapper);
@@ -153,6 +156,7 @@ function errorLog(message) {
     let appendAlert = (message) => {
       mess.textContent = message;
       mess.style.color = "red";
+      mess.setAttribute("dir", "rtl");
       wrapper.appendChild(mess);
 
       alertPlaceholder.append(wrapper);
