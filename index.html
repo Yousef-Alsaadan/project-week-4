@@ -82,7 +82,7 @@
     <!--main map-->
     <div class="conten">
       <div class="map-container">
-        <div class="city" id="western" onmouseover="checkWeather('Jeddah', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div class="city" id="western">
           <img src="western-map.png" />
 
           <div class="city_text">
@@ -100,8 +100,7 @@
         <div class="city" id="eastern">
           <img src="eastern-map.png" />
           <div class="city_text">
-        
-              المنطقة الشرقية: الدمام والخبر
+            المنطقة الشرقية: الدمام والخبر
             <p>
               أرض الاقتصاد والطاقة، تضيف إلى مسيرة الوطن قوة وعزيمة نحو مستقبل
               مشرق.
@@ -112,10 +111,10 @@
           </div>
         </div>
 
-        <div class="city" id="northern" onmouseover="checkWeather('Tabuk', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div class="city" id="northern">
           <img src="northern-map.png" />
           <div class="city_text">
-              المنطقة الشمالية: تبوك والجوف
+            المنطقة الشمالية: تبوك والجوف
             <p>
               حامية الحدود وموطن القوة، ترفع راية الوحدة والفخر في يوم الوطن
               العظيم.
@@ -126,10 +125,10 @@
           </div>
         </div>
 
-        <div class="city" id="southern" onmouseover="checkWeather('Jazan', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div class="city" id="southern">
           <img src="southern-map.png" />
-          <div class=" city_text">
-              المنطقة الجنوبية: عسير وجازان
+          <div class="city_text">
+            المنطقة الجنوبية: عسير وجازان
             <p>
               طبيعة ساحرة وتاريخ عريق، تعزز معاني الولاء والاعتزاز في اليوم
               الوطني.
@@ -140,10 +139,10 @@
           </div>
         </div>
 
-        <div class="city" id="central" onmouseover="checkWeather('Riyadh', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div class="city" id="central">
           <img src="central-map.png" />
-          <div class=" city_text">
-              المنطقة الوسطى: العاصمة الرياض
+          <div class="city_text">
+            المنطقة الوسطى: العاصمة الرياض
             <p>
               قلب المملكة النابض بالعطاء والنهضة، حيث يتجلى الفخر بالهوية والوطن
               في كل زاوية
@@ -153,7 +152,6 @@
             </div>
           </div>
         </div>
-
         <div id="box-central" class="activity-box">
           <h1>الفعاليات الوطنيه بالمنطقه الوسطى:</h1>
           <div class="img-activity">
@@ -247,6 +245,8 @@
             </div>
        
           </div>
+
+
           <button class="closeBox" onclick="closeBox('box-eastern')">العوده</button>
         </div>
         
@@ -325,37 +325,16 @@
       </div>
     </div>
 
-    <!--الخيل -->
+      <!--الخيل -->
 
-    <div>
-      <img id="character" src="horse-running.png" alt="شخصية" height="150" />
-      <div class="popup-container">
-        <div class="popup-box">
-          <div class="popup_title">
-            <h1></h1>
-            <button class="close-btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="40px"
-                viewBox="0 -960 960 960"
-                width="40px"
-                fill="#fff"
-              >
-                <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                />
-              </svg>
-            </button>
-          </div>
-          <div id="chatbox">
-            <p id="questionDisplay">مرحبًا!</p>
-            <input type="text" id="answerInput" placeholder="اكتب إجابتك هنا" />
-            <button onclick="checkAnswer()">إرسال</button>
-            <div id="result"></div>
-          </div>
-        </div>
+      <img id="character" src="horse-running.jpg" alt="شخصية" />
+
+      <div id="chatbox">
+        <p id="questionDisplay">مرحبًا!</p>
+        <input type="text" id="answerInput" placeholder="اكتب إجابتك هنا" />
+        <button onclick="checkAnswer()">إرسال</button>
+        <div id="result"></div>
       </div>
-    </div>
 
     <!--javascript-->
     <script src="main.js"></script>
