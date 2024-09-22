@@ -132,6 +132,8 @@ let currentQuestionIndex;
 
 document.getElementById("character").addEventListener("click", function () {
   document.getElementById("chatbox").style.display = "block";
+  popupContainer.classList.add("active");
+  document.getElementById("character").style.visibility = "hidden";
 
   currentQuestionIndex = Math.floor(Math.random() * questionsAndAnswers.length);
   document.getElementById("questionDisplay").innerText =
@@ -146,8 +148,10 @@ function checkAnswer() {
 
   if (userAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
     document.getElementById("result").innerText = "إجابة صحيحة!";
+    document.getElementById("result").style.color = "green";
   } else {
     document.getElementById("result").innerText = " أخطأت، راجع وطنيتك!";
+    document.getElementById("result").style.color = "red";
   }
 }
 function showBox(boxId) {
