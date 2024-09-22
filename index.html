@@ -15,6 +15,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <!--tag icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>ذاكرة الوطن</title>
 
@@ -80,41 +88,48 @@
     <!--main map-->
     <div class="conten">
       <div class="map-container">
-        <div class="city" id="western" onmouseover="checkWeather('Jeddah', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div
+          class="city"
+          id="western"
+          onmouseover="checkWeather('Jeddah', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))"
+        >
           <img src="western-map.png" />
 
-          <div class="map_box_continer">
-            <div class="western_text city_text">
-              <div class="map_box_title">
-                المنطقة الغربية: جدة ومكة
+          <div class="city_text">
+            <div class="map_box_title">
+              المنطقة الغربية: جدة ومكة
 
-                <div class="weater_content" dir="ltr">
-                  <div class="weater_img">
-                    <img
-                      src="snow.png"
-                      class="weather-icon"
-                      style="height: 38px"
-                    />
-                  </div>
-
-                  <p class="cityTemp">15°C</p>
+              <div class="weater_content" dir="ltr">
+                <div class="weater_img">
+                  <img
+                    src="snow.png"
+                    class="weather-icon"
+                    style="height: 38px"
+                  />
                 </div>
+
+                <p class="cityTemp">15°C</p>
               </div>
-              <p>
-                مهد الرسالة ومصدر الإلهام، تحتفي بروحانية تجمع بين الحضارة
-                والتراث.
-              </p>
-              <div class="button-city">
-                <button>الفعاليات الوطنيه</button>
-                <button>الذاكره الوطنيه</button>
-              </div>
+            </div>
+            <p>
+              مهد الرسالة ومصدر الإلهام، تحتفي بروحانية تجمع بين الحضارة
+              والتراث.
+            </p>
+            <div class="button-city">
+              <button onclick="showBox('box-western')">
+                الفعاليات الوطنيه
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="city" id="eastern" onmouseover="checkWeather('Dammam', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div
+          class="city"
+          id="eastern"
+          onmouseover="checkWeather('Dammam', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))"
+        >
           <img src="eastern-map.png" />
-          <div class="eastern_text city_text">
+          <div class="city_text">
             <div class="map_box_title">
               المنطقة الشرقية: الدمام والخبر
 
@@ -135,15 +150,20 @@
               مشرق.
             </p>
             <div class="button-city">
-              <button>الفعاليات الوطنيه</button>
-              <button>الذاكره الوطنيه</button>
+              <button onclick="showBox('box-eastern')">
+                الفعاليات الوطنيه
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="city" id="northern" onmouseover="checkWeather('Tabuk', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div
+          class="city"
+          id="northern"
+          onmouseover="checkWeather('Tabuk', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))"
+        >
           <img src="northern-map.png" />
-          <div class="northern_text city_text">
+          <div class="city_text">
             <div class="map_box_title">
               المنطقة الشمالية: تبوك والجوف
 
@@ -164,15 +184,20 @@
               العظيم.
             </p>
             <div class="button-city">
-              <button>الفعاليات الوطنيه</button>
-              <button>الذاكره الوطنيه</button>
+              <button onclick="showBox('box-northern')">
+                الفعاليات الوطنيه
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="city" id="southern" onmouseover="checkWeather('Jazan', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div
+          class="city"
+          id="southern"
+          onmouseover="checkWeather('Jazan', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))"
+        >
           <img src="southern-map.png" />
-          <div class="southern_text city_text">
+          <div class="city_text">
             <div class="map_box_title">
               المنطقة الجنوبية: عسير وجازان
 
@@ -193,15 +218,20 @@
               الوطني.
             </p>
             <div class="button-city">
-              <button>الفعاليات الوطنيه</button>
-              <button>الذاكره الوطنيه</button>
+              <button onclick="showBox('box-southern')">
+                الفعاليات الوطنيه
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="city" id="central" onmouseover="checkWeather('Riyadh', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))">
+        <div
+          class="city"
+          id="central"
+          onmouseover="checkWeather('Riyadh', this.querySelector('.cityTemp'), this.querySelector('.weather-icon'))"
+        >
           <img src="central-map.png" />
-          <div class="central_text city_text">
+          <div class="city_text">
             <div class="map_box_title">
               المنطقة الوسطى: العاصمة الرياض
 
@@ -222,10 +252,266 @@
               في كل زاوية
             </p>
             <div class="button-city">
-              <button>الفعاليات الوطنيه</button>
-              <button>الذاكره الوطنيه</button>
+              <button onclick="showBox('box-central')">
+                الفعاليات الوطنيه
+              </button>
             </div>
           </div>
+        </div>
+        <div id="box-central" class="activity-box">
+          <h1>الفعاليات الوطنيه بالمنطقه الوسطى:</h1>
+          <div class="img-activity">
+            <div class="img-contant">
+              <img
+                src="https://api.riyadh.sa/sites/default/files/styles/medium/public/2024-09/Diriyah%2002.jpg?itok=c5CcTmYT"
+              />
+              <h3>الدرعيه التاريخيه</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 4:00 م - 11:00 م</p>
+              <a
+                href="https://www.google.com//maps/search/24.73649799695,46.574596598955?hl=ar"
+                class="location-link"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://api.riyadh.sa/sites/default/files/styles/medium/public/2024-09/Falcons%2002.jpg?itok=F2MvltLF"
+              />
+              <h3>نادي الصقور السعودي</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 5:00 م - 10:00 م</p>
+              <a href="https://maps.app.goo.gl/HUT4pCAv2ewjrggn8"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://api.riyadh.sa/sites/default/files/styles/medium/public/2024-09/Airshow.jpg?itok=C3J8asX7"
+              />
+              <h3>عروض القوات الجويه</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 4:30 م - 5:15 م</p>
+              <a href="https://maps.app.goo.gl/fSwhdEPpoHdqLokQA"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://api.riyadh.sa/sites/default/files/styles/medium/public/2024-09/National%20Museum.jpg?itok=_da-uiY-"
+              />
+              <h3>المتحف الوطني</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 4:00 م - 9:00 م</p>
+              <a href="https://maps.app.goo.gl/XqD3vjXHSqNnszFb6"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+          </div>
+          <button class="closeBox" onclick="closeBox('box-central')">
+            العوده
+          </button>
+        </div>
+        <div id="box-western" class="activity-box">
+          <h1>الفعاليات الوطنية بالمنطقه الغربيه:</h1>
+          <div class="img-activity">
+            <div class="img-contant">
+              <img
+                src="https://enjoy.sa/media/5oxi3ezs/العروض-الجوية-550-نيو.jpg?center=0.50059016946294577,0.50059016946294577&mode=crop&width=550&height=367&quality=70"
+              />
+              <h3>العروض الجوية والبحرية</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 5:00 م - 6:00 م</p>
+              <a
+                href="https://maps.app.goo.gl/Hq7WfDsDG38TevQa8"
+                class="location-link"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://enjoy.sa/media/r2obnihn/فلفكلور-550.jpg?anchor=center&mode=crop&width=550&height=367&quality=70"
+              />
+              <h3>الفولكلور السعودي</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 5:00 م - 10:00 م</p>
+              <a href="https://maps.app.goo.gl/TNa1x71stcDKScTZ7"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://enjoy.sa/media/1judqonq/الالعاب-النارية-550.jpg?center=0.50059016946294577,0.50059016946294577&mode=crop&width=550&height=367&quality=70"
+              />
+              <h3>عروض الألعاب النارية</h3>
+              <p>20 ربيع الأوّل , 9:00 م - 9:15 م</p>
+              <a href="https://maps.app.goo.gl/CG7XZxx5dif5GMNm8"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://enjoy.sa/media/z53pnfix/شجاع-550.jpg?crop=0,0.044444444444444453,0,0.2882828282828282&cropmode=percentage&width=550&height=367&quality=70"
+              />
+              <h3>مسرحية شجاع</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 7:00 م - 10:00 م</p>
+              <a href="https://maps.app.goo.gl/xtVfFMvSM6h66dwX9"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+          </div>
+          <button class="closeBox" onclick="closeBox('box-western')">
+            العوده
+          </button>
+        </div>
+
+        <div id="box-eastern" class="activity-box">
+          <h1>الفعاليات الوطنية بالمنطقه الشرقيه:</h1>
+          <div class="img-activity">
+            <div class="img-contant">
+              <img
+                src="https://www.alriyadh.com/media/thumb/f0/4a/1000_537064432f.jpg"
+              />
+              <h3>سيرة رجال المؤسس</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 6:00 م - 9:00 م</p>
+              <a
+                href="https://maps.app.goo.gl/CGCUjST6GTytndSY7"
+                class="location-link"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNY7TG_e_Skykvs7kr0QA34ioCHgBuoxVzDg&s"
+              />
+              <h3>إثراء</h3>
+              <p>20 ربيع الأوّل - 21 ربيع الأوّل , 5:00 م- 10:00 م</p>
+              <a href="https://maps.app.goo.gl/iowK3QaZi8yiHdAD6"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://portalcdn.spa.gov.sa/backend/original/201809/30702d8dd6365f04df06159437052a84.jpeg "
+              />
+              <h3>عروض المقاتلات الجوية</h3>
+              <p>20 ربيع الأوّل , 5:00 م</p>
+              <a href="https://maps.app.goo.gl/uupMNJEyvMxbtuKj9"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://media.assettype.com/sabq%2F2022-09%2F7282c613-9e6b-4c56-91b6-2aca0ef6f193%2FPHOTO_2022_09_22_16_57_38__1_.jpg?w=640&auto=format%2Ccompress"
+              />
+              <h3>لوحة وطن</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل ,4:00</p>
+              <a href="https://maps.app.goo.gl/1CSFb9s6jXbzQ5Bp6"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+          </div>
+
+          <button class="closeBox" onclick="closeBox('box-eastern')">
+            العوده
+          </button>
+        </div>
+
+        <div id="box-northern" class="activity-box">
+          <h1>الفعاليات الوطنية بالمنطقه الشماليه :</h1>
+          <div class="img-activity">
+            <div class="img-contant">
+              <img
+                src="https://arabmirrors.com/wp-content/uploads/2024/09/DALL·E-2024-09-22-10.48.35-A-featured-banner-image-for-an-article-about-National-Day-94-celebrations-in-Hail-Saudi-Arabia.-The-image-should-depict-a-vibrant-scene-with-light-sh-780x470.webp"
+              />
+              <h3>عروض الضوء على الجبال</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 6:00 م - 9:00 م</p>
+              <a
+                href="https://maps.app.goo.gl/FL3reqsNetTWCF37A"
+                class="location-link"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://media.assettype.com/ajel%2F2022-09%2Ffb0eb377-2804-4b15-92b0-1f6537ee4a3c%2F1.png"
+              />
+              <h3>مسار الماضي والحاضر</h3>
+              <p>20 ربيع الأوّل - 21 ربيع الأوّل , 5:00 م- 10:00 م</p>
+              <a href="https://maps.app.goo.gl/Aj4E3dgaiU5pbpuj8"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://www.al-madina.com/uploads/images/2022/10/02/2104059.jpg"
+              />
+              <h3>العروض الجوية</h3>
+              <p>20 ربيع الأوّل , 5:00 م</p>
+              <a
+                href="https://www.al-madina.com/uploads/images/2022/10/02/2104059.jpg"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpf0hcMqpGO1i8Hv2PQqWn4nJpJthA7jgPFQ&s"
+              />
+              <h3>العرضه السعوديه</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 8:00 م</p>
+              <a href="https://maps.app.goo.gl/Aj4E3dgaiU5pbpuj8"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+          </div>
+          <button class="closeBox" onclick="closeBox('box-northern')">
+            العوده
+          </button>
+        </div>
+
+        <div id="box-southern" class="activity-box">
+          <h1>الفعاليات الوطنية بالمنطقه الجنوبية :</h1>
+          <div class="img-activity">
+            <div class="img-contant">
+              <img
+                src="https://cdn.alweb.com/thumbs/arabcountriesguide/article/fit710x532/1/كم-عدد-سكان-أبها.jpeg"
+              />
+              <h3>شارع الفنّ</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 6:00 م - 9:00 م</p>
+              <a
+                href="https://maps.app.goo.gl/q6hhMXFwFNoqq5gF7"
+                class="location-link"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://portalcdn.spa.gov.sa/backend/original/202309/1q5B5VdrGT43evyD7EZXYWtm8BYiLcfsNIqiKaaV.jpg"
+              />
+              <h3>المعرض الامني</h3>
+              <p>20 ربيع الأوّل - 21 ربيع الأوّل , 5:00 م- 9:00 م</p>
+              <a href="https://maps.app.goo.gl/PPQ5EuqMDAiWEx2a7"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://www.okaz.com.sa/uploads/images/2022/03/11/1950189.jpg"
+              />
+              <h3>الجبل الاخضر</h3>
+              <p>20 ربيع الأوّل , 5:00م- 9:00م</p>
+              <a href="https://maps.app.goo.gl/yfLTmsFDkwvVDw6z5"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <div class="img-contant">
+              <img
+                src="https://discoveraseer.com/assets/experience/fireworks.jpg"
+              />
+              <h3>عروض الالعاب الناريه</h3>
+              <p>19 ربيع الأوّل - 21 ربيع الأوّل , 8:00 م</p>
+              <a href="https://maps.app.goo.gl/ySip1mWuacAD3aB97"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+          </div>
+          <button class="closeBox" onclick="closeBox('box-southern')">
+            العوده
+          </button>
         </div>
 
         <!--hero text-->
@@ -237,7 +523,6 @@
     </div>
 
     <!--الخيل -->
-
     <div>
       <img id="character" src="horse-running.png" alt="شخصية" height="150" />
       <div class="popup-container">
