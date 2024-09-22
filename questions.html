@@ -75,8 +75,60 @@
         </div>
       </nav>
     </div>
+
+    <!--questions-->
+    <div class="questions_contener">
+      <div id="character_change">
+        <img id="character_main" src="I-dont-know.png" alt="" />
+      </div>
+
+      <div class="questions_main">
+        <header id="header">
+          <div class="title">
+            <h1 class="site-title">اختبر وطنيتك</h1>
+          </div>
+          <div class="score">
+            <p id="score-counter">0</p>
+            <p class="points">نقاط</p>
+          </div>
+        </header>
+
+        <div id="content">
+          <div id="question-box"><p id="the-question"></p></div>
+          <div id="answer-box">
+            <ul>
+              <li class="answer">أ: <span id="first-answer"></span></li>
+              <li class="answer">ب: <span id="second-answer"></span></li>
+              <li class="answer">ج: <span id="third-answer"></span></li>
+              <li class="answer">د: <span id="fourth-answer"></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="results-container">
+          <div class="results">
+            <h1 id="title_results"></h1>
+            <div class="result-text">
+              <p>
+                <span id="num-total"></span>
+                <span id="num-correct"></span>
+                <span id="num-wrong"></span>
+              </p>
+            </div>
+          </div>
+          <!--caracter-->
+          <div class="d-none">
+            <div class="caracter_incornar">
+              <img id="caracter_src" src="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--javascript-->
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
     <script src="style.js"></script>
+    <script src="questions.js"></script>
   </body>
 </html>
