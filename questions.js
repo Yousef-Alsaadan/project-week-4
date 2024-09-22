@@ -247,7 +247,7 @@ window.onload = function () {
     div.appendChild(logOut);
     userBar.appendChild(div);
   } else {
-    window.location.href = "./index.html";
+    window.location.href = "./log.html";
   }
   // else {
   //   let hidden = document.getElementsByClassName("hidden")[0];
@@ -257,5 +257,5 @@ window.onload = function () {
 
 function logOut() {
   localStorage.removeItem("user");
-  window.location.href = "./home.html";
+  window.location.href = "./log.html";
 }
