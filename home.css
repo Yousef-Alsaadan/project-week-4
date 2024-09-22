@@ -101,17 +101,16 @@
   transform: translate(-50%, -50%);
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  color: black;
-  /* background-color: rgba(0, 0, 0, 0.5); */
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 1.2em;
   display: none;
   /* سيتم إظهاره عند التفاعل */
-  cursor: auto;
-  /* سيتم إظهاره عند التفاعل */
+}
 
- 
+.city:hover .city_text {
+  display: block;
+
 }
 
 .button-city {
@@ -131,62 +130,13 @@
   
 }
 
-/*#character {
+#character {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 15%;
   animation: walk 4s linear infinite;
   mix-blend-mode: multiply;
-  justify-content: space-around;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-*/
-
-
-.city_clicked {
-  position: absolute;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-
-  transform: scale(1.2);
-
-  z-index: 999;
-}
-
-.city_clicked img {
-  position: absolute;
-  float: left;
-  filter: grayscale(0);
-}
-
-.city_clicked_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 30vw;
-  color: black;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 1.2em;
-  display: block;
-  cursor: auto;
-  /* سيتم إظهاره عند التفاعل */
-
-  /* background: rgba(255, 255, 255, 0.09); */
-  
-}
-
-/*الخيل*/
-#character {
-  position: absolute;
-  bottom: 0;
-  /* left: 0; */
-  /* width: 15%; */
-  animation: walk 4s linear infinite;
-  z-index: 999;
 }
 
 @keyframes walk {
@@ -298,139 +248,6 @@ height: 25vh;
     display: flex;
     flex-wrap: wrap;
 }
-.popup-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  /* background: rgba(0, 0, 0, .3); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  top: 0;
-
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.popup-container.active {
-  opacity: 1;
-  pointer-events: auto;
-  transition: .4s ease;
-}
-
-.popup-container .popup-box {
-  width: 500px;
-  background: #f2f2f2;
-  border-radius: 6px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, .1); */
-  padding: 30px;
-  transform: scale(0);
-}
-
-.popup-container.active .popup-box {
-  transform: scale(1);
-  transition: .4s ease;
-  transition-delay: .25s;
-}
-
-.popup-box h1 {
-  color: #333;
-  line-height: 1;
-}
-
-.popup-box p {
-  color: #333;
-  margin: 12px 0 20px;
-}
-
-.popup_title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.popup-box .close-btn {
-  /* width: 100%; */
-  height: 45px;
-  background: #C17250;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-  cursor: pointer;
-  font-size: 18px;
-  color: #f2f2f2;
-  font-weight: 500;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#chatbox {
-  display: none;
-  font-size: 2em;
-}
-
-#chatbox input {
-  font-size: 1em;
-  padding-right: .5rem;
-  border: none;
-  border-radius: 10px;
-
-}
-
-#chatbox input:focus {
-  color: #C17250;
-  outline: 1px solid #C17250;
-}
-
-#chatbox input::placeholder {
-  color: #C17250;
-}
-
-#chatbox button {
-  font-size: .8em;
-  background: #C17250;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  padding: .5rem 1rem;
-}
-
-
-/*weather*/
-.map_box_title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-weight: bold;
-}
-.map_box_title p{
-  font-weight: 400;
-}
-
-.weater_content {
-  display: flex;
-  align-items: center;
-  /* gap: .5rem; */
-}
-
-.weater_img img {
-  filter: grayscale(0);
-
-  position: relative;
-}
-
-
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
 
@@ -560,31 +377,6 @@ height: 25vh;
   font-size: 0.5rem;
   width: 100%;
   
- #character {
-    animation: walk 1s linear infinite;
-  }
-
-  .popup-container .popup-box {
-    width: 300px;
-  }
-
-  #chatbox input {
-    font-size: .85em;
-    margin-bottom: 1rem;
-  }
-
-  .button-city {
-    flex-direction: column;
-  }
-
-  .city_clicked_text,
-  .city_text {
-    font-size: 1em;
-    width: 50vw;
-  }
-
-  
-
 }
 }
 
@@ -707,13 +499,6 @@ height: 25vh;
   
 }
 
-
-  #character {
-    animation: walk 2s linear infinite;
-  }
-
-
-  
 }
 
 /* Extra large devices */
@@ -812,5 +597,3 @@ height: 25vh;
 
   
 }
-
-  
