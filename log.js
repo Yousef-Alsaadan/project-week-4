@@ -24,7 +24,7 @@ function change_caracter_wel() {}
 function change_caracter_teach() {}
 
 /*log validate*/
-let url = "https://66e7e6a8b17821a9d9da6f51.mockapi.io/usersAccount";
+let url = "https://66f02a49f2a8bce81be52e94.mockapi.io/users";
 
 let signUpBtn = document.getElementById("signUpBtn");
 let userName = document.getElementById("userName");
@@ -41,49 +41,53 @@ let mess = document.createElement("p");
 
 async function signUp() {
   event.preventDefault();
-  if (userName.value.length >= 5) {
-    if (pass.value.length >= 8) {
-      let validateEmail = (emailAddress) => {
-        return emailAddress.value.match(
-          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        );
-      };
-      if (validateEmail(emailAddress)) {
-        let textUser = await areUserTaken(userName.value, emailAddress.value);
-        if (!textUser) {
-          fetch(url, {
-            method: "POST",
-            body: JSON.stringify({
-              user: userName.value,
-              email: emailAddress.value,
-              pass: pass.value,
-            }),
-            headers: {
-              "Content-type": "application/json; charset=UTF-8",
-            },
-          })
-            .then((response) => response.json())
-            .then((json) => {
-              localStorage.setItem(
-                "user",
-                JSON.stringify({
-                  user: userName.value,
-                  email: emailAddress.value,
-                })
-              );
-              window.location.href = "./home.html";
-            });
+  if (userName.value != "" && pass.value != "" && emailAddress.value != "") {
+    if (userName.value.length >= 5) {
+      if (pass.value.length >= 8) {
+        let validateEmail = (emailAddress) => {
+          return emailAddress.value.match(
+            /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          );
+        };
+        if (validateEmail(emailAddress)) {
+          let textUser = await areUserTaken(userName.value, emailAddress.value);
+          if (!textUser) {
+            fetch(url, {
+              method: "POST",
+              body: JSON.stringify({
+                user: userName.value,
+                email: emailAddress.value,
+                pass: pass.value,
+              }),
+              headers: {
+                "Content-type": "application/json; charset=UTF-8",
+              },
+            })
+              .then((response) => response.json())
+              .then((json) => {
+                localStorage.setItem(
+                  "user",
+                  JSON.stringify({
+                    user: userName.value,
+                    email: emailAddress.value,
+                  })
+                );
+                window.location.href = "./home.html";
+              });
+          } else {
+            errorSign("الاسم او الايميل مأخوذ!!");
+          }
         } else {
-          errorSign("Username or email is Taken!");
+          errorSign("الايميل غلط!!");
         }
       } else {
-        errorSign("Invalid email!");
+        errorSign("الرمز لازم أكثر من 8 خانات!!");
       }
     } else {
-      errorSign("Password must be at least 8 characters!");
+      errorSign("اسم المستخدم لازم أكثر 5 حروف!!");
     }
   } else {
-    errorSign("Username must be at least 5 characters!");
+    errorSign("الرجاء تعبأة الحقول!!");
   }
 }
 

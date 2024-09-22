@@ -63,7 +63,7 @@ nav img {
     border-radius: 10px;
     cursor: pointer;
 
-    display: block;
+    display: none;
 }
 
 .btn_sign:hover {
@@ -79,7 +79,7 @@ nav img {
     border-radius: 10px;
     cursor: pointer;
 
-    display: none;
+    display: block;
 }
 
 .btn_out:hover {
