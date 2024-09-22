@@ -34,3 +34,16 @@ function checkAnswer() {
         document.getElementById('result').innerText = ' أخطأت، راجع وطنيتك!';
     }
 }
+function showBox(boxId) {
+    const allBoxes = document.querySelectorAll('.activity-box');
+    allBoxes.forEach(box => {
+      box.style.display = 'none';
+    });
+  
+    document.getElementById(boxId).style.display = 'block';
+  }
+  
+  function closeBox(boxId) {
+    document.getElementById(boxId).style.display = 'none';
+  }
+  
