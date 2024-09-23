@@ -72,6 +72,7 @@ body {
         flex-basis: 100%;
     }
     
+    
     .info-box p {
         font-size: 1.2rem;
         color: #333;
@@ -94,6 +95,13 @@ body {
         text-align: center;
         display: inline-block;
     }
+}
+@media only screen and (max-width: 932px) and (orientation: landscape){
+    .section h2{
+        font-size: 2.5rem;
+    }
+   
+   
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
