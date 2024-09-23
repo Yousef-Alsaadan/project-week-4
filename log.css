@@ -243,6 +243,10 @@ footer {
     .wrapper {
         margin: 1rem;
     }
+
+    .caracter_wrapper {
+        display: none;
+    }
 }
 
 /* Medium devices */
@@ -254,6 +258,10 @@ footer {
     body {
         height: 50%;
     }
+
+    .caracter_wrapper {
+        display: none;
+    }
 }
 
 /* Extra large devices */
@@ -261,5 +269,9 @@ footer {
 
     body {
         height: 50%;
+    }
+
+    .caracter_wrapper {
+        display: none;
     }
 }
