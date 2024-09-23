@@ -229,6 +229,12 @@ form .btn input[type="submit"] {
     z-index: 0;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    color: rgb(77, 77, 77);
+}
+
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
     .wrapper {

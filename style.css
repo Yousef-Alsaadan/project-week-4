@@ -91,6 +91,14 @@ nav img {
     display: none;
 }
 
+footer{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: rgb(77, 77, 77);
+}
+
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
     .conten {
