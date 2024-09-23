@@ -18,4 +18,17 @@ if(window.innerWidth<=600){
         }
     })
     }
+      /*direct to login*/
+  window.onload = function () {
+    const userData = JSON.parse(localStorage.getItem("user"));
+  
+    if (!userData) {
+      window.location.href = "./log.html";
+    }
+  };
+  
+  function logOut() {
+    localStorage.removeItem("user");
+    window.location.href = "./log.html";
+  }
     
