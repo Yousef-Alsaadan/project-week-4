@@ -175,6 +175,8 @@ function clearClasses() {
 }
 
 function showTheResults() {
+  const userData = JSON.parse(localStorage.getItem("user"));
+
   let correct = quizStats.correct;
 
   document
@@ -186,7 +188,9 @@ function showTheResults() {
   document.getElementById("character_main").style.visibility = "hidden";
 
   if (correct < 4) {
-    document.getElementById("title_results").textContent = "افااا";
+    document.getElementById(
+      "title_results"
+    ).textContent = `افااا يا ${userData.user}`;
 
     let result_text = document.getElementsByClassName("result-text")[0];
 
@@ -202,7 +206,9 @@ function showTheResults() {
 
     document.getElementById("caracter_src").src = "./wrong-answer.png";
   } else {
-    document.getElementById("title_results").textContent = "الله عليك";
+    document.getElementById(
+      "title_results"
+    ).textContent = `الله عليك يا ${userData.user}`;
 
     let result_text = document.getElementsByClassName("result-text")[0];
 
@@ -227,3 +233,17 @@ function showTheResults() {
   addEventListeners();
   addDataAttributes();
 })();
+
+/*direct to login*/
+window.onload = function () {
+  const userData = JSON.parse(localStorage.getItem("user"));
+
+  if (!userData) {
+    window.location.href = "./log.html";
+  }
+};
+
+function logOut() {
+  localStorage.removeItem("user");
+  window.location.href = "./log.html";
+}

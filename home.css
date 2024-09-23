@@ -9,25 +9,26 @@
 }
 
 .city {
-
   position: absolute;
   transition: transform 0.3s ease;
   cursor: pointer;
+  filter: grayscale(100%);
 }
 
 .city:hover {
   transform: scale(1.2);
   z-index: 999;
+  filter: grayscale(0);
 }
 
 .city img {
   position: absolute;
   float: left;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .city img:hover {
-  filter: grayscale(0);
+  /* filter: grayscale(0); */
   transition: transform 0.3s ease;
 }
 
@@ -223,6 +224,13 @@
 
 } */
 
+.activity_continar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
 .activity-box {
 
   display: none;
@@ -231,7 +239,7 @@
   left: 75%;
   transform: translate(-50%, -50%);
   width: 47%;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: white;
   z-index: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -595,6 +603,7 @@
     width: 100%;
 
   }
+
   #character {
     position: absolute;
     bottom: 5vh;
@@ -732,6 +741,7 @@
     width: 105%;
 
   }
+
   #character {
     position: absolute;
     bottom: 30vh;
