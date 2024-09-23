@@ -1,0 +1,165 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+
+* {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    box-sizing: border-box;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f1da;
+}
+
+.container_farewell {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.content_farewell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 6rem;
+}
+
+.text_farewell {
+    display: flex;
+    flex-direction: column;
+    margin-right: 6rem;
+}
+
+.text_farewell h1 {
+    font-size: 6em;
+    width: 36rem;
+    font-weight: 600;
+    color: #C17250;
+}
+
+.text_farewell a {
+    background-color: #EBDDA7;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: .6rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: rgb(77, 77, 77);
+    width: 100%;
+    text-align: center;
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 600px) {
+    .container_farewell {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .content_farewell {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .text_farewell {
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .text_farewell h1 {
+        font-size: 3em;
+        width: 18rem;
+    }
+
+    .img_farewell img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* Medium devices */
+@media only screen and (max-width: 992px) and (min-width: 601px) {
+    .container_farewell {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .content_farewell {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .text_farewell {
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .text_farewell h1 {
+        font-size: 4em;
+        width: 24rem;
+    }
+
+    .img_farewell img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* Extra large devices */
+@media only screen and (max-width: 1200px) and (min-width: 993px) {
+    .container_farewell {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .content_farewell {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .text_farewell {
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .text_farewell h1 {
+        font-size: 4em;
+        width: 24rem;
+    }
+
+    .img_farewell img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        position: static;
+    }
+}
