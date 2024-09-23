@@ -29,6 +29,6 @@ if(window.innerWidth<=600){
   
   function logOut() {
     localStorage.removeItem("user");
-    window.location.href = "./log.html";
+    window.location.href = "./farewell.html";
   }
     
