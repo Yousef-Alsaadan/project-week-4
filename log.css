@@ -224,25 +224,24 @@ form .btn input[type="submit"] {
 }
 
 .caracter_wrapper {
-    position: fixed;
-    translate: -48% -23%;
-    z-index: 0;
+    position: absolute;
+    translate: -35% -23%;
+    transform: rotate(-35deg);
+    /* z-index: -1; */
 }
 
 footer {
     position: absolute;
     bottom: 0;
     color: rgb(77, 77, 77);
+    width: 100%;
+    text-align: center;
 }
 
 /* Extra small devices */
 @media only screen and (max-width: 600px) {
     .wrapper {
         margin: 1rem;
-    }
-
-    .caracter_wrapper {
-        translate: -48% -17%;
     }
 }
 
@@ -252,10 +251,6 @@ footer {
         margin: 1rem;
     }
 
-    .caracter_wrapper {
-        translate: -48% -42%;
-    }
-
     body {
         height: 50%;
     }
@@ -263,9 +258,6 @@ footer {
 
 /* Extra large devices */
 @media only screen and (max-width: 1200px) and (min-width: 993px) {
-    .caracter_wrapper {
-        translate: -48% -33%;
-    }
 
     body {
         height: 50%;
