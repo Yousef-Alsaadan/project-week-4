@@ -1,6 +1,5 @@
 /*main map*/
 
-
 let questionsAndAnswers = [
   { question: "متى يُحتفل باليوم الوطني السعودي؟", answer: " 23 سبتمبر" },
   {
@@ -47,10 +46,14 @@ function checkAnswer() {
   let correctAnswer = questionsAndAnswers[currentQuestionIndex].answer;
 
   if (userAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
-    document.getElementById("result").innerText = `أحسنت يا ${userData.user} إجابة صحيحة.`;
+    document.getElementById(
+      "result"
+    ).innerText = `أحسنت يا ${userData.user} إجابة صحيحة.`;
     document.getElementById("result").style.color = "green";
   } else {
-    document.getElementById("result").innerText = `أخطأت، راجع وطنيتك يا ${userData.user}!`;
+    document.getElementById(
+      "result"
+    ).innerText = `أخطأت، راجع وطنيتك يا ${userData.user}!`;
     document.getElementById("result").style.color = "red";
   }
 }
@@ -61,10 +64,16 @@ function showBox(boxId) {
   });
 
   document.getElementById(boxId).style.display = "block";
+
+  document.getElementsByClassName("activity_continar")[0].style.display =
+    "block";
 }
 
 function closeBox(boxId) {
   document.getElementById(boxId).style.display = "none";
+
+  document.getElementsByClassName("activity_continar")[0].style.display =
+    "none";
 }
 
 const showPopup = document.querySelector(".show-popup");
