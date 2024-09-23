@@ -41,14 +41,16 @@ document.getElementById("character").addEventListener("click", function () {
 });
 
 function checkAnswer() {
+  const userData = JSON.parse(localStorage.getItem("user"));
+
   let userAnswer = document.getElementById("answerInput").value;
   let correctAnswer = questionsAndAnswers[currentQuestionIndex].answer;
 
   if (userAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
-    document.getElementById("result").innerText = "إجابة صحيحة!";
+    document.getElementById("result").innerText = `أحسنت يا ${userData.user} إجابة صحيحة.`;
     document.getElementById("result").style.color = "green";
   } else {
-    document.getElementById("result").innerText = " أخطأت، راجع وطنيتك!";
+    document.getElementById("result").innerText = `أخطأت، راجع وطنيتك يا ${userData.user}!`;
     document.getElementById("result").style.color = "red";
   }
 }
@@ -102,28 +104,10 @@ async function checkWeather(city, Temp, icon) {
 /*direct to login*/
 window.onload = function () {
   const userData = JSON.parse(localStorage.getItem("user"));
-  const userBar = document.getElementsByClassName("user_bar")[0];
 
-  if (userData) {
-    let div = document.createElement("div");
-    let name = document.createElement("p");
-    let logOut = document.createElement("button");
-
-    div.setAttribute("class", "flex");
-    name.textContent = `${userData.user}`;
-    logOut.textContent = "Log Out";
-    div.setAttribute("onclick", "logOut()");
-
-    div.appendChild(name);
-    div.appendChild(logOut);
-    userBar.appendChild(div);
-  } else {
+  if (!userData) {
     window.location.href = "./log.html";
   }
-  // else {
-  //   let hidden = document.getElementsByClassName("hidden")[0];
-  //   hidden.style.display = "block";
-  // }
 };
 
 function logOut() {

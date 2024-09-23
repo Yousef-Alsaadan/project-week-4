@@ -175,6 +175,8 @@ function clearClasses() {
 }
 
 function showTheResults() {
+  const userData = JSON.parse(localStorage.getItem("user"));
+
   let correct = quizStats.correct;
 
   document
@@ -186,7 +188,9 @@ function showTheResults() {
   document.getElementById("character_main").style.visibility = "hidden";
 
   if (correct < 4) {
-    document.getElementById("title_results").textContent = "افااا";
+    document.getElementById(
+      "title_results"
+    ).textContent = `افااا يا ${userData.user}`;
 
     let result_text = document.getElementsByClassName("result-text")[0];
 
@@ -202,7 +206,9 @@ function showTheResults() {
 
     document.getElementById("caracter_src").src = "./wrong-answer.png";
   } else {
-    document.getElementById("title_results").textContent = "الله عليك";
+    document.getElementById(
+      "title_results"
+    ).textContent = `الله عليك يا ${userData.user}`;
 
     let result_text = document.getElementsByClassName("result-text")[0];
 
@@ -231,28 +237,10 @@ function showTheResults() {
 /*direct to login*/
 window.onload = function () {
   const userData = JSON.parse(localStorage.getItem("user"));
-  const userBar = document.getElementsByClassName("user_bar")[0];
 
-  if (userData) {
-    let div = document.createElement("div");
-    let name = document.createElement("p");
-    let logOut = document.createElement("button");
-
-    div.setAttribute("class", "flex");
-    name.textContent = `${userData.user}`;
-    logOut.textContent = "Log Out";
-    div.setAttribute("onclick", "logOut()");
-
-    div.appendChild(name);
-    div.appendChild(logOut);
-    userBar.appendChild(div);
-  } else {
+  if (!userData) {
     window.location.href = "./log.html";
   }
-  // else {
-  //   let hidden = document.getElementsByClassName("hidden")[0];
-  //   hidden.style.display = "block";
-  // }
 };
 
 function logOut() {

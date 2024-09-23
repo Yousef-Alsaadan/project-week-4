@@ -114,7 +114,7 @@ function logIn() {
         }
       });
       if (!userFound) {
-        errorLog("المستخدم خير متوفر!");
+        errorLog("المستخدم غير متوفر!");
       }
     });
 }
