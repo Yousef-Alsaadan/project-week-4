@@ -24,7 +24,7 @@ body {
 
 .content_farewell {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 
     margin-top: 6rem;
@@ -34,6 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-right: 6rem;
+    justify-content: space-between;
 }
 
 .text_farewell h1 {

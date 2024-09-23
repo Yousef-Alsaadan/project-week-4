@@ -28,7 +28,6 @@ if(window.innerWidth<=600){
   };
   
   function logOut() {
-    localStorage.removeItem("user");
     window.location.href = "./farewell.html";
   }
     

@@ -244,6 +244,5 @@ window.onload = function () {
 };
 
 function logOut() {
-  localStorage.removeItem("user");
   window.location.href = "./farewell.html";
 }
